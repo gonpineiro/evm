@@ -3,7 +3,7 @@ ts-node src 0x60FF60AA0160FC60016001
 
 #### Ejemplo de operaciones:
 
-`yarn dev 0x60FF60AA0160FC600c020a`
+`yarn  pvm --code 0x60FF60AA0160FC600c020a --gasLimit 10000`
 
 - Agrega 0xff al Stack: PUSH (0x60) 0xff
 - Agrega 0xaa al Stack: PUSH (0x60) 0xaa
@@ -18,3 +18,6 @@ ts-node src 0x60FF60AA0160FC60016001
 - Queda unicamente el Stack:    ['0x01a9', '0x0bd0']
 
 - Suma los ultimos dos valores del Stack: ADD (0x01) 0x01a9 + 0x0bd0 = 0x0d79
+
+
+`yarn pvm --code 0x600A6000525B600660005160019003806000526000109057 --gasLimit 10000`
